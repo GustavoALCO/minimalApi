@@ -127,3 +127,6 @@ C:\Users\alves\source\repos\CursoAsp\CursoAsp\bin\Debug\net8.0\runtimes\win-arm\
 C:\Users\alves\source\repos\CursoAsp\CursoAsp\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\alves\source\repos\CursoAsp\CursoAsp\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\alves\source\repos\CursoAsp\CursoAsp\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\alves\source\repos\CursoAsp\CursoAsp\obj\Debug\net8.0\CursoAsp.sourcelink.json
+C:\Users\alves\source\repos\CursoAsp\CursoAsp\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\alves\source\repos\CursoAsp\CursoAsp\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
