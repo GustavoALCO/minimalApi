@@ -15,6 +15,7 @@ public static class RangosHandlers
                                        >> GetRangosNameAsync
                                         (RangoDbContext rangoDbContext,
                                         IMapper mapper,
+                                        ILogger<RangoDTO> logger,
                                         [FromQuery(Name = "name")]
                                         string? rangonome)
     {
@@ -29,10 +30,12 @@ public static class RangosHandlers
 
         if (rangos == null || rangos.Count() <= 0)
         {
+            logger.LogInformation($"Não foi encontrado. Parametro: {rangonome}");
             return TypedResults.NoContent();
         }   //retorna um 204 de notContent
         else
         {
+            logger.LogInformation($"Retornando Rango Encontrado com o Parametro de: {rangonome}");
             return TypedResults.Ok(rangos);
         }
         //fazendo uma verificação
