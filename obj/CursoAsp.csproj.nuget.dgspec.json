@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alves\\source\\repos\\CursoAsp\\CursoAsp\\CursoAsp.csproj": {}
+    "C:\\Users\\Gustavo\\OneDrive\\Documentos\\GitHub\\minimalApi\\CursoAsp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alves\\source\\repos\\CursoAsp\\CursoAsp\\CursoAsp.csproj": {
+    "C:\\Users\\Gustavo\\OneDrive\\Documentos\\GitHub\\minimalApi\\CursoAsp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alves\\source\\repos\\CursoAsp\\CursoAsp\\CursoAsp.csproj",
+        "projectUniqueName": "C:\\Users\\Gustavo\\OneDrive\\Documentos\\GitHub\\minimalApi\\CursoAsp.csproj",
         "projectName": "CursoAsp",
-        "projectPath": "C:\\Users\\alves\\source\\repos\\CursoAsp\\CursoAsp\\CursoAsp.csproj",
-        "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alves\\source\\repos\\CursoAsp\\CursoAsp\\obj\\",
+        "projectPath": "C:\\Users\\Gustavo\\OneDrive\\Documentos\\GitHub\\minimalApi\\CursoAsp.csproj",
+        "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gustavo\\OneDrive\\Documentos\\GitHub\\minimalApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

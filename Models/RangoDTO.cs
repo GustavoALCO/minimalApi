@@ -1,9 +1,9 @@
-﻿namespace CursoAsp.Models
-{
-    public class RangoDTO
-    {
-        public int Id { get; set; }
+﻿namespace CursoAsp.Models;
 
-        public required string Nome { get; set; }
-    }
+public class RangoDTO
+{
+    public int Id { get; set; }
+
+    public required string Nome { get; set; }
 }
+

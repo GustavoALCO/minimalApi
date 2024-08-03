@@ -1,10 +1,11 @@
 using CursoAsp.DdContext;
-using CursoAsp.EndpointHandlers;
 using CursoAsp.Extensions;
 using Microsoft.EntityFrameworkCore;
-using System.Net;
+
 
 //DbContext = pasta que gerencia o controle ao bando de dados 
+
+//EndPointFilters = Esta os filtros onde por exemplo no caso de excluir ou alterar algum item do banco de dados ele proteger e não deixar 
 
 //EndPointHandlers = É onde esta os metodos de Get,Put,Del e Create
 

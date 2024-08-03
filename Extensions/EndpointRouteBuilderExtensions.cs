@@ -1,4 +1,5 @@
-﻿using CursoAsp.EndpointHandlers;
+﻿using CursoAsp.EndpointFilters;
+using CursoAsp.EndpointHandlers;
 
 namespace CursoAsp.Extensions;
 
@@ -16,9 +17,12 @@ public static class EndpointRouteBuilderExtensions
         //Adiciona um apelido para ser chamado 
         rangosEndpoints.MapPost("", RangosHandlers.PostRangosAsync);
 
-        rangosComIDEndpoints.MapPut("", RangosHandlers.PutRangoAsync);
-
-        rangosComIDEndpoints.MapDelete("", RangosHandlers.DeleteRangoAsync);
+        rangosComIDEndpoints.MapPut("", RangosHandlers.PutRangoAsync)
+            .AddEndpointFilter<TorresmoRangoIsLockedFilter>();
+        //CHAMANDO UMA CLASSE ONDE NÃO SERA POSSIVEL ALTERAR O TORRESMO COM O ID 13
+            
+        rangosComIDEndpoints.MapDelete("", RangosHandlers.DeleteRangoAsync)
+        .AddEndpointFilter<TorresmoRangoIsLockedFilter>();
     }
 
     public static void registerIngredientesEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)

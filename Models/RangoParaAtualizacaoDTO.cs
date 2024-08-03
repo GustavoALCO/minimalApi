@@ -1,7 +1,7 @@
-﻿namespace CursoAsp.Models
-{
+﻿namespace CursoAsp.Models;
+
     public class RangoParaAtualizacaoDTO
-    {
-        public required string Nome { get; set; }
-    }
+{
+    public required string Nome { get; set; }
 }
+
