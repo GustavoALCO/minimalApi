@@ -63,8 +63,8 @@ public static class RangosHandlers
                              //Essa task informa que essa classe vai retornar um RangoDTO
                              (RangoDbContext rangoDbContext,
                              IMapper mapper,
-                             LinkGenerator linkGenerator,
-                             HttpContext httpContext,
+                             //LinkGenerator linkGenerator,
+                             //HttpContext httpContext,
                              [FromBody] RangoParaCriacaoDTO rangoParaCriacaoDto)
     {
         var rangoEntity = mapper.Map<Rango>(rangoParaCriacaoDto);

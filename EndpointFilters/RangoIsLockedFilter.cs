@@ -2,8 +2,16 @@
 
 namespace CursoAsp.EndpointFilters;
 
-public class TorresmoRangoIsLockedFilter : IEndpointFilter
+public class RangoIsLockedFilter : IEndpointFilter
 {
+    public readonly int _lockedRangoId;
+
+    public RangoIsLockedFilter(int _LockedRangoId)
+    {
+        _lockedRangoId = _LockedRangoId;
+        //Criando um construtor para que quando a classe ser chamada ser obrigatoriamente ser passado um ID 
+    }
+
     public async ValueTask<object?> InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next)
     {
         int rangoId;
@@ -24,7 +32,7 @@ public class TorresmoRangoIsLockedFilter : IEndpointFilter
         }
 
 
-        if (rangoId == 13)
+        if (rangoId == _lockedRangoId)
         {
             return TypedResults.Problem(new()
             {
