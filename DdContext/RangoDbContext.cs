@@ -1,11 +1,12 @@
 ﻿using CursoAsp.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
+
 
 namespace CursoAsp.DdContext;
 
-public class RangoDbContext(DbContextOptions<RangoDbContext> options) : DbContext(options)
-{//crianto um organizador para a classe rango
+public class RangoDbContext(DbContextOptions<RangoDbContext> options) : IdentityDbContext(options)
+{//crianto um organizador para a classe rango                           //
     public DbSet<Rango> Rangos { get; set; } = null!;
     public DbSet<Ingredientes> Ingredientes { get; set; } = null!;
 

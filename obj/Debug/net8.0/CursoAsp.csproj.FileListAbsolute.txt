@@ -394,3 +394,12 @@ C:\Users\alves\Downloads\minimalApi\obj\Debug\net8.0\refint\CursoAsp.dll
 C:\Users\alves\Downloads\minimalApi\obj\Debug\net8.0\CursoAsp.pdb
 C:\Users\alves\Downloads\minimalApi\obj\Debug\net8.0\CursoAsp.genruntimeconfig.cache
 C:\Users\alves\Downloads\minimalApi\obj\Debug\net8.0\ref\CursoAsp.dll
+C:\Users\alves\Downloads\minimalApi\bin\Debug\net8.0\MiniValidation.dll
+C:\Users\alves\Downloads\minimalApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\alves\Downloads\minimalApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\alves\Downloads\minimalApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\alves\Downloads\minimalApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\alves\Downloads\minimalApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\alves\Downloads\minimalApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\alves\Downloads\minimalApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\alves\Downloads\minimalApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

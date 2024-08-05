@@ -1,6 +1,8 @@
 using CursoAsp.DdContext;
 using CursoAsp.Extensions;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 
 //DbContext = pasta que gerencia o controle ao bando de dados 
@@ -24,12 +26,59 @@ var builder = WebApplication.CreateBuilder(args);
 //criação de uma variavel para armazenar as configuraçoes da webAplication
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("TokenAuthRango",
+        //definição do nome das configuraçoes
+        new()
+        {
+            Name = "Authorization",
+            Description = "Token baseado em Autenticação e Autorização",
+            Type = SecuritySchemeType.Http,
+            Scheme = "Bearer",
+            In = ParameterLocation.Header
+        }
+        );
+    options.AddSecurityRequirement(new()
+        {
+        //criando uma chave 
+            {
+            new()
+            //adicionando um elemento
+            {
+                Reference = new OpenApiReference {
+                Type = ReferenceType.SecurityScheme,
+                Id = "TokenAuthRango"
+                }
+            },
+            new List<string>()
+            //adicionando um elemento
+            }
+        });
+});
 //configurando o swagger(vem padrão )
 builder.Services.AddDbContext<RangoDbContext>(
     o => o.UseSqlite(builder.Configuration["ConnectionStrings:RangoDbStr"])
     );
 //criando uma conexão para o banco de dados
+
+builder.Services.AddIdentityApiEndpoints<IdentityUser>()
+                .AddEntityFrameworkStores<RangoDbContext>(); 
+
+builder.Services.AddAuthorizationBuilder()
+                .AddPolicy("RequiredAdminFromBrazil", policy =>
+                {
+                    policy
+                          .RequireRole("admin")
+                          //ROLE É PARA ATRIBUIR O PAPEL 
+                          .RequireClaim("country", "Brazil");
+                          //CLAIM SERVE PARA ATRIBUIR A LOCALIZAÇÃO 
+                });//adicionando politica 
+
+
+builder.Services.AddAuthentication().AddJwtBearer();
+builder.Services.AddAuthorization();
+//adicionando configuraçoes de segurança dentro da api, o codigo se encontra no appsettings.json
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 //PEGA OS ASSEMBLY DO DOMINIO ATUAL, PESQUISA QUEM HERDA DE PROFILES E ATRIBUI PARA O PROGRAM 
@@ -62,6 +111,9 @@ if (!app.Environment.IsDevelopment())
 }
 
 
+app.UseAuthentication();
+app.UseAuthorization();
+//Faz funcionar os filtros de segurança configurado lá em cima
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

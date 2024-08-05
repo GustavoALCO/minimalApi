@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\alves\\Downloads\\minimalApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94687FF1-D0CF-461F-A341-B65E09E7C36C}|CursoAsp.csproj|c:\\users\\alves\\downloads\\minimalapi\\endpointfilters\\validateannotationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94687FF1-D0CF-461F-A341-B65E09E7C36C}|CursoAsp.csproj|solutionrelative:endpointfilters\\validateannotationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94687FF1-D0CF-461F-A341-B65E09E7C36C}|CursoAsp.csproj|c:\\users\\alves\\downloads\\minimalapi\\extensions\\endpointroutebuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94687FF1-D0CF-461F-A341-B65E09E7C36C}|CursoAsp.csproj|solutionrelative:extensions\\endpointroutebuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94687FF1-D0CF-461F-A341-B65E09E7C36C}|CursoAsp.csproj|c:\\users\\alves\\downloads\\minimalapi\\ddcontext\\rangodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94687FF1-D0CF-461F-A341-B65E09E7C36C}|CursoAsp.csproj|solutionrelative:ddcontext\\rangodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94687FF1-D0CF-461F-A341-B65E09E7C36C}|CursoAsp.csproj|c:\\users\\alves\\downloads\\minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94687FF1-D0CF-461F-A341-B65E09E7C36C}|CursoAsp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,37 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "EndpointRouteBuilderExtensions.cs",
               "DocumentMoniker": "C:\\Users\\alves\\Downloads\\minimalApi\\Extensions\\EndpointRouteBuilderExtensions.cs",
               "RelativeDocumentMoniker": "Extensions\\EndpointRouteBuilderExtensions.cs",
               "ToolTip": "C:\\Users\\alves\\Downloads\\minimalApi\\Extensions\\EndpointRouteBuilderExtensions.cs",
               "RelativeToolTip": "Extensions\\EndpointRouteBuilderExtensions.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAA5AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T19:10:41.783Z",
+              "WhenOpened": "2024-08-05T15:59:20.679Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ValidateAnnotationFilter.cs",
-              "DocumentMoniker": "C:\\Users\\alves\\Downloads\\minimalApi\\EndpointFilters\\ValidateAnnotationFilter.cs",
-              "RelativeDocumentMoniker": "EndpointFilters\\ValidateAnnotationFilter.cs",
-              "ToolTip": "C:\\Users\\alves\\Downloads\\minimalApi\\EndpointFilters\\ValidateAnnotationFilter.cs",
-              "RelativeToolTip": "EndpointFilters\\ValidateAnnotationFilter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABIAAAA",
+              "DocumentIndex": 1,
+              "Title": "RangoDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\alves\\Downloads\\minimalApi\\DdContext\\RangoDbContext.cs",
+              "RelativeDocumentMoniker": "DdContext\\RangoDbContext.cs",
+              "ToolTip": "C:\\Users\\alves\\Downloads\\minimalApi\\DdContext\\RangoDbContext.cs",
+              "RelativeToolTip": "DdContext\\RangoDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T19:02:22.338Z",
+              "WhenOpened": "2024-08-05T15:45:58.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alves\\Downloads\\minimalApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\alves\\Downloads\\minimalApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAADsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T15:04:20.198Z",
+              "EditorCaption": ""
             }
           ]
         }
